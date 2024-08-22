@@ -1,4 +1,8 @@
-analysis
+upload
+config
+sessions
+plugins
+analOysis
 docker-compose-secret.yml
 limesurvey*
 *.ogg
