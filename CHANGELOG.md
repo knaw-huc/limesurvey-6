@@ -1,5 +1,51 @@
 # CHANGELOG
 
+
+## 22-8-2024
+
+Nieuwe pogingb om aan de praat te krijgen. LimeSurvey permissie problemen. Gelukt met de laatste versie.
+Er is wel een verandering gaande in deze Stack.
+
+- acspri/limesurvey is nu
+- adamzammit/limesurvey
+
+Geprobeerd aan de praat te krijgen.
+
+
+https://hub.docker.com/r/acspri/limesurvey 
+
+is nu
+
+https://registry.hub.docker.com/r/adamzammit/limesurvey
+
+Dit is de github
+
+https://github.com/adamzammit/limesurvey-docker
+
+Verschillende docker-compose files...
+
+Met die van Githuib lukte het uiteindelijk. 
+Moest een paar keer alle permissies recursief aan de mackant bij de gedeelde Volumes goed zetten.
+Steeds opstarten met `docker-compose up` en kijken welke directory nu weer opnieuw gezet moest worden.
+
+    chmod -R 777 config
+    chmod -R 777 config
+    chmod -R 777 config
+    chmod -R 777 config
+    chmod -R 777 plugins/
+    chmod -R 777 sessions/
+    chmod -R 777 upload/
+    chmod -R 777 upload/
+    chmod -R 777 upload/
+    
+Zo zag de sessie eruit en toen start hij op..
+
+
+## 14-2-2023
+
+Ook met 3 geprobeerd werkt niet.
+
+
 ## 8-2-2023
 
 Naieve start met aangepaste werkende docker-compose file voor SPAQ. Containers starten niet op.
