@@ -1,6 +1,32 @@
 # CHANGELOG
 
 
+## 12-9-2024
+
+- template trouble buttons deactiveren niet goed qua css
+
+```html
+    <div id="javatbd199996X1X4SQ002" class="bootstrap-buttons-div col-12 col-md-2 mb-1">
+        <div class="form-check col-12 ">
+        <input type="checkbox" name="199996X1X4SQ002" data-name="199996X1X4SQ002" class="btn-check button-item" id="answer199996X1X4SQ002" value="Y">
+        <label for="answer199996X1X4SQ002" class="col-12 btn btn-primary ">nee</label>
+        <input type="hidden" name="java199996X1X4SQ002" id="java199996X1X4SQ002" value="Y">
+        </div>
+    </div>
+    
+    <div id="javatbd199996X1X4SQ002" class="bootstrap-buttons-div col-12 col-md-2 mb-1">
+        <div class="form-check col-12 ">
+        <input type="checkbox" name="199996X1X4SQ002" data-name="199996X1X4SQ002" class="btn-check button-item" id="answer199996X1X4SQ002" value="Y">
+        <label for="answer199996X1X4SQ002" class="col-12 btn btn-primary ">nee</label>
+        <input type="hidden" name="java199996X1X4SQ002" id="java199996X1X4SQ002" value="">
+        </div>
+    </div>
+
+
+```
+
+
+
 ## 29-8-2024
 
 - template aanpassingen Bootstrap buttons, kleuren te weinig verschil normaal en geactiveerd
