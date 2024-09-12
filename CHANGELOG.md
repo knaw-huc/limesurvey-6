@@ -1,6 +1,21 @@
 # CHANGELOG
 
 
+## 29-8-2024
+
+- template aanpassingen Bootstrap buttons, kleuren te weinig verschil normaal en geactiveerd
+
+- oplossing: template extenden en het volgende in de custom.css stoppen
+
+```css
+    div.bootstrap-buttons-div .btn-primary {
+        background-color: white;
+        border: 1px solid #0f3e12;
+        color: black; 
+    }
+
+```
+
 ## 22-8-2024
 
 Nieuwe pogingb om aan de praat te krijgen. LimeSurvey permissie problemen. Gelukt met de laatste versie.

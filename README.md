@@ -20,3 +20,18 @@ https://registry.hub.docker.com/r/adamzammit/limesurvey
 Let op: verschil in docker-compose op beide.
 
 
+    docker compose up -d
+    http://localhost:8082/admin/
+
+Troubleshoot
+
+In ieder geval op een Mac. Een aantal keer de 4 gedefinieerde bind volumes volledige permissies geven.
+    
+    docker compose up 
+    chmod -R 777 config
+    chmod -R 777 plugins/
+    chmod -R 777 sessions/
+    chmod -R 777 upload/
+
+Afhankelijk van de meldingen in de LimeSurvey logs, een paar keer herhalen.
+Geen idee waarom dat moet, niets over kunnen vinden 
